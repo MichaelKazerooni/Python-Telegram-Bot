@@ -17,7 +17,7 @@ class telegram_bot():
         return json.loads(r.content)
 
     def send_message(self,audiance_name):
-        chat_id = 191305056
+        chat_id = 191305056 # this chat bot only works for specific chat_id
         current_time = datetime.now()
         current_time = current_time.strftime("%H:%M:%S")
         text = f" Hello {audiance_name}. Current time is: {current_time}"
